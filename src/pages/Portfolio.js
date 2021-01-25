@@ -34,6 +34,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.up("md")]: {
             maxWidth: "40em",
             fontSize: "1.25em"
+        },
+        [theme.breakpoints.down("xs")]: {
+            maxWidth: "25em"
         }
     },
     header: {
@@ -47,8 +50,8 @@ const useStyles = makeStyles(theme => ({
         maxWidth: "30em",
         maxHeight: "30em",
         [theme.breakpoints.down("xs")]: {
-            maxHeight: "25em",
-            maxWidth: "25em"
+            maxHeight: "20em",
+            maxWidth: "20em"
         },
         [theme.breakpoints.up("sm")]: {
             maxHeight:"35em",
@@ -76,7 +79,8 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.up("lg")]: {
             height: "100em"
-        }
+        },
+        margin: 0
     },
     stepper: {
         backgroundColor: "transparent",
