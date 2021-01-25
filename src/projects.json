@@ -1,7 +1,7 @@
 [
     {
         "title": "Chategories",
-        "image": "CGlg.png",
+        "image": "https://github.com/dfkestner/DFK-Portfolio/blob/main/src/assets/CGlg.png?raw=true",
         "repository": "https://github.com/nmckenzie1/chategories",
         "deployedLink": "https://chategories-57274.web.app/",
         "description": "A mobile-first app that allows users to connect with others who share their interests. Built with Firebase UI, Firestore Database, Material UI, and React, users can quickly and easily create an account with Google Sign-In, create or contribute to real-time chat forums, or send direct messages to other user profiles."
