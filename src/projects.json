@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Chategories",
+        "image": "CGlg.png",
+        "repository": "https://github.com/nmckenzie1/chategories",
+        "deployedLink": "https://chategories-57274.web.app/",
+        "description": "A mobile-first app that allows users to connect with others who share their interests. Built with Firebase UI, Firestore Database, Material UI, and React, users can quickly and easily create an account with Google Sign-In, create or contribute to real-time chat forums, or send direct messages to other user profiles."
+    },
+    {
+        "title": "xkcDaily",
+        "image": "https://github.com/dfkestner/DFK-Portfolio/blob/main/src/assets/xkcDailyScreenShot.png?raw=true",
+        "repository": "https://github.com/LindseyM20/xkcDaily",
+        "deployedLink": "https://xkcdaily.herokuapp.com/",
+        "description": "A daily calendar that provides users with an xckd comic for each day. Comics are automatically saved to the dates selected, and users may add, view, and delete events for current, future, or present dates."
+    },
+    {
+        "title": "I Can Has Burgerz",
+        "image": "https://github.com/dfkestner/DFK-Portfolio/blob/main/src/assets/burgerz.png?raw=true",
+        "repository": "https://github.com/dfkestner/I-Can-Has-Burgerz",
+        "deployedLink": "https://quiet-crag-17291.herokuapp.com/",
+        "description": "The #1 app for cats who want to keep track of burgers they want to have and burgers they have already eaten, using MySQL, Node, Express, Handlebars, ORM, and Heroku."
+    },
+    {
+        "title": "Write My Readme",
+        "image": "https://github.com/dfkestner/DFK-Portfolio/blob/main/src/assets/SampleREADME.png?raw=true",
+        "repository": "https://github.com/dfkestner/Write-My-README",
+        "deployedLink": "https://drive.google.com/file/d/1yJL_modb-yiuuLSdFP3csFH3cvCQsfc7/view",
+        "description": "Write My README is a command line tool that allows users to respond to a series of prompts to generate a README.md file quickly and easily through NodeJS."
+    },
+    {
+        "title": "Manage My Minions",
+        "image": "https://github.com/dfkestner/Manage-My-Minions/raw/main/ManageMinions1.png",
+        "repository": "https://github.com/dfkestner/Manage-My-Minions",
+        "deployedLink": "https://github.com/dfkestner/Manage-My-Minions",
+        "description": "A command line interface that allows users to view the departments, roles, and employees of an organization using NodeJS and MySQL. New departments, roles, and employees can be added, and employee roles and managers can be updated."
+    },
+    {
+        "title": "Employee Directory Generator",
+        "image": "https://github.com/dfkestner/DFK-Portfolio/blob/main/src/assets/EDGScreenshot.png?raw=true",
+        "repository": "https://github.com/dfkestner/Employee-Directory-Generator",
+        "deployedLink": "https://drive.google.com/file/d/1rCW2JytQ5DWyTSLVhToSiIyGQ5ZgMrur/view",
+        "description": "A command line tool that allows users to generate an HTML Employee Directory through a series of inquirer prompts. The 'when' function is used to display different prompts based on the type of employee selected."
+    }
+]
