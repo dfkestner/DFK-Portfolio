@@ -102,7 +102,8 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.up("lg")]: {
             fontSize:"3em"
-        }
+        },
+        justify: "center"
 
     }
 }));
