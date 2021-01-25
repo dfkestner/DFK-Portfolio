@@ -10,8 +10,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         alignItems: "center",
         [theme.breakpoints.down("xs")]: {
-            marginTop: "5em",
-            marginBottom: "5em"
+            marginTop: "8em",
         }
     },
     homebackground: {
@@ -87,7 +86,7 @@ export default function Home(props) {
             >
                 <Grid
                     item
-                    style={{ marginBottom: "2em" }}
+                    style={{ marginBottom: "1em" }}
                 >
                     <Typography
                         variant="h3"
@@ -98,7 +97,7 @@ export default function Home(props) {
                 </Grid>
                 <Grid
                     item
-                    style={{ marginBottom: "2em" }}
+                    style={{ marginBottom: "1em" }}
                 >
                     <Typewriter
                         options={{
@@ -134,7 +133,7 @@ export default function Home(props) {
                     <Typography
                         variant="body1"
                         paragraph
-                        style={{fontSize: matchesMD ? "1.5em" : "1.25em"}}
+                        style={{fontSize: matchesMD ? "1.5em" : "1.25em", marginBottom: "7em"}}
                     >
                         Check out <a 
                         style={{ color: theme.palette.common.gold }} 
