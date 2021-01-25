@@ -1,28 +1,30 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Typography, Grid, useMediaQuery } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { Typography, Grid } from '@material-ui/core';
 import homeBG from '../assets/Background.jpg';
 
 const useStyles = makeStyles(theme => ({
     bio: {
         position: "absolute",
         textAlign: "center",
-        alignItems: "center",
-        [theme.breakpoints.down("xs")]: {
-            marginTop: "8em",
-        }
+        marginTop: "5em",
+    },
+    content: {
+        marginLeft: "2em",
+        marginRight: "2em",
+        maxWidth: "40em"
     },
     homebackground: {
         backgroundImage: `url(${homeBG})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        height: "85vh",
-        [theme.breakpoints.down("xs")]: {
-            height: "100vh",
-        },
+        height: "40em",
         width: "100%"
+    },
+    links: {
+        color: theme.palette.common.gold
     },
     name: {
         fontFamily: 'Permanent Marker',
@@ -56,15 +58,14 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down("xs")]: {
             fontSize: "1.75em"
         }
+    },
+    words: {
+        fontSize: "1.25em", 
     }
 }));
 
 export default function Home(props) {
     const classes = useStyles();
-    const theme = useTheme();
-    const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
-    const matchesMD = useMediaQuery(theme.breakpoints.up("md"));
-
     const stringList = [
         "Full-Stack Web Developer",
         "Technical/Instructional Writer",
@@ -75,13 +76,13 @@ export default function Home(props) {
     return (
         <Grid
             container
-            justify="space-evenly"
-            alignItems="center"
         >
+            <div className={classes.homebackground}>
             <Grid
-                item
                 container
                 direction="column"
+                justify="space-evenly"
+                alignItems="center"
                 className={classes.bio}
             >
                 <Grid
@@ -112,45 +113,44 @@ export default function Home(props) {
                 </Grid>
                 <Grid
                     item
-                    style={{
-                        marginLeft: matchesSM ? "2em" : "10em", marginRight: matchesSM ? "2em" : "10em", maxWidth: "40em"
-                    }}
+                    className={classes.content}
                 >
                     <Typography
                         variant="body1"
                         paragraph
-                        style={{fontSize: matchesMD ? "1.5em" : "1.25em"}}
+                        className={classes.words}
                     >
                         Greetings from Manassas, Virginia 👋
                     </Typography>
                     <Typography
                         variant="body1"
                         paragraph
-                        style={{fontSize: matchesMD ? "1.5em" : "1.25em"}}
+                        className={classes.words}
                     >
                         I am a web developer with several years of leadership, training, and technical writing experience, looking for pretty much any opportunity to collaborate, create, or learn.
                     </Typography>
                     <Typography
                         variant="body1"
                         paragraph
-                        style={{fontSize: matchesMD ? "1.5em" : "1.25em", marginBottom: "7em"}}
+                        className={classes.words}
+                        style={{marginBottom: "5em"}}
                     >
                         Check out <a 
-                        style={{ color: theme.palette.common.gold }} 
+                        className={classes.links} 
                         href={"/portfolio"}
                         >my work
                         </a>, learn more about <a 
-                        style={{ color: theme.palette.common.gold }} 
+                        className={classes.links}
                         href="/about"
                         >my experience
                         </a>, or <a 
-                        style={{ color: theme.palette.common.gold }} 
+                        className={classes.links} 
                         href={"/contact"}
                         >reach out</a>!
                     </Typography>
                 </Grid>
             </Grid>
-            <div className={classes.homebackground} />
+            </div>
         </Grid>
     )
 }
