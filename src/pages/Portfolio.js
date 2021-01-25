@@ -46,6 +46,10 @@ const useStyles = makeStyles(theme => ({
     image: {
         maxWidth: "30em",
         maxHeight: "30em",
+        [theme.breakpoints.down("xs")]: {
+            maxHeight: "25em",
+            maxWidth: "25em"
+        },
         [theme.breakpoints.up("sm")]: {
             maxHeight:"35em",
             maxWidth: "35em"

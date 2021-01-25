@@ -9,6 +9,10 @@ const useStyles = makeStyles(theme => ({
         position: "absolute",
         textAlign: "center",
         alignItems: "center",
+        [theme.breakpoints.down("xs")]: {
+            marginTop: "5em",
+            marginBottom: "5em"
+        }
     },
     homebackground: {
         backgroundImage: `url(${homeBG})`,
@@ -16,6 +20,9 @@ const useStyles = makeStyles(theme => ({
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: "85vh",
+        [theme.breakpoints.down("xs")]: {
+            height: "100vh",
+        },
         width: "100%"
     },
     name: {
