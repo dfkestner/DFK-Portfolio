@@ -72,7 +72,7 @@ export default function Contact(props) {
                     </Typography>
                     <Button
                         className={classes.links}
-                        href="mailto:dfkestner@gmail.com"
+                        href="https://www.linkedin.com/in/dorotea-flores-kestner-01b6721b4/"
                         target="_blank">
                             add me on LinkedIn
                     </Button>
